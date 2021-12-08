@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C6C0FA9C27604A9100BDCD3C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0FA9B27604A9100BDCD3C /* main.swift */; };
+		C6E58D792760609A00EB5EEF /* BigInt in Frameworks */ = {isa = PBXBuildFile; productRef = C6E58D782760609A00EB5EEF /* BigInt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6E58D792760609A00EB5EEF /* BigInt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +82,9 @@
 			dependencies = (
 			);
 			name = "3x+1";
+			packageProductDependencies = (
+				C6E58D782760609A00EB5EEF /* BigInt */,
+			);
 			productName = "3x+1";
 			productReference = C6C0FA9827604A9100BDCD3C /* 3x+1 */;
 			productType = "com.apple.product-type.tool";
@@ -108,6 +113,9 @@
 				Base,
 			);
 			mainGroup = C6C0FA8F27604A9000BDCD3C;
+			packageReferences = (
+				C6E58D772760609A00EB5EEF /* XCRemoteSwiftPackageReference "BigInt" */,
+			);
 			productRefGroup = C6C0FA9927604A9100BDCD3C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -288,6 +296,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6E58D772760609A00EB5EEF /* XCRemoteSwiftPackageReference "BigInt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/attaswift/BigInt.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6E58D782760609A00EB5EEF /* BigInt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6E58D772760609A00EB5EEF /* XCRemoteSwiftPackageReference "BigInt" */;
+			productName = BigInt;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C6C0FA9027604A9000BDCD3C /* Project object */;
 }

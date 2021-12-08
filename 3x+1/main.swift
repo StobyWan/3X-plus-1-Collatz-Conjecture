@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import BigInt
 
-func threeX(_ num: inout Int) -> Int {
+func threeX(_ num: inout BigInt) -> BigInt {
     let original = num
     if num == 1 {
         return num
@@ -26,9 +27,9 @@ func threeX(_ num: inout Int) -> Int {
     print(num)
     return threeX(&num)
 }
-
-for i in 1152921504606847000..<Int.max {
-    var val = i
+//1152921504606847000..<Int.max
+for i in 1152921504606847000..<2152921504606847000 {
+    var val = BigInt(i)
     print("completed \(i) \(threeX(&val))")
 }
 
