@@ -27,8 +27,8 @@ func threeX(_ num: inout Int) -> Int {
     return threeX(&num)
 }
 
-var val = 7000
+for i in 1152921504606847000..<Int.max {
+    var val = i
+    print("completed \(i) \(threeX(&val))")
+}
 
-
-
-_ = threeX(&val)
