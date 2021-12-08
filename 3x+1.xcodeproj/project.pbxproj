@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C6C0FA9C27604A9100BDCD3C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0FA9B27604A9100BDCD3C /* main.swift */; };
-		C6E58D792760609A00EB5EEF /* BigInt in Frameworks */ = {isa = PBXBuildFile; productRef = C6E58D782760609A00EB5EEF /* BigInt */; };
+		C6E58D7C2760EAD800EB5EEF /* NumberKit in Frameworks */ = {isa = PBXBuildFile; productRef = C6E58D7B2760EAD800EB5EEF /* NumberKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6E58D792760609A00EB5EEF /* BigInt in Frameworks */,
+				C6E58D7C2760EAD800EB5EEF /* NumberKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 			);
 			name = "3x+1";
 			packageProductDependencies = (
-				C6E58D782760609A00EB5EEF /* BigInt */,
+				C6E58D7B2760EAD800EB5EEF /* NumberKit */,
 			);
 			productName = "3x+1";
 			productReference = C6C0FA9827604A9100BDCD3C /* 3x+1 */;
@@ -114,7 +114,7 @@
 			);
 			mainGroup = C6C0FA8F27604A9000BDCD3C;
 			packageReferences = (
-				C6E58D772760609A00EB5EEF /* XCRemoteSwiftPackageReference "BigInt" */,
+				C6E58D7A2760EAD800EB5EEF /* XCRemoteSwiftPackageReference "swift-numberkit" */,
 			);
 			productRefGroup = C6C0FA9927604A9100BDCD3C /* Products */;
 			projectDirPath = "";
@@ -298,21 +298,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C6E58D772760609A00EB5EEF /* XCRemoteSwiftPackageReference "BigInt" */ = {
+		C6E58D7A2760EAD800EB5EEF /* XCRemoteSwiftPackageReference "swift-numberkit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/attaswift/BigInt.git";
+			repositoryURL = "https://github.com/objecthub/swift-numberkit";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C6E58D782760609A00EB5EEF /* BigInt */ = {
+		C6E58D7B2760EAD800EB5EEF /* NumberKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C6E58D772760609A00EB5EEF /* XCRemoteSwiftPackageReference "BigInt" */;
-			productName = BigInt;
+			package = C6E58D7A2760EAD800EB5EEF /* XCRemoteSwiftPackageReference "swift-numberkit" */;
+			productName = NumberKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

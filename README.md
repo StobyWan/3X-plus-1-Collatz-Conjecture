@@ -7,14 +7,12 @@ or logic for that matter.
 this software will fail.
 
 ```
-import Foundation
-
-func threeX(_ num: inout Int) -> Int {
+func threeX(_ num: inout BigInt) -> BigInt {
     let original = num
     if num == 1 {
         return num
     }
-    else if num == Int.max {
+    else if num > Int.max { /// having trouble finding a value to compare here
         print("You found it \(original)")
         return original
     }
@@ -25,13 +23,14 @@ func threeX(_ num: inout Int) -> Int {
     else {
         num = (num * 3) + 1
     }
-    print(num)
+//    print(num)
     return threeX(&num)
 }
-
-for i in 1152921504606847000..<Int.max {
-    var val = i
+//1152921504606847000..<Int.max
+for i in 1152921504606948113..<2152921504606847000 {
+    var val = BigInt(i)
     print("completed \(i) \(threeX(&val))")
 }
+
 
 ```
