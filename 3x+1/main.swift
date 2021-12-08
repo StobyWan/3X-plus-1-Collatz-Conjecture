@@ -8,8 +8,13 @@
 import Foundation
 
 func threeX(_ num: inout Int) -> Int {
+    let original = num
     if num == 1 {
         return num
+    }
+    else if num == Int.max {
+        print("You found it \(original)")
+        return original
     }
 
     if num % 2 == 0 {
@@ -23,5 +28,7 @@ func threeX(_ num: inout Int) -> Int {
 }
 
 var val = 7000
+
+
 
 _ = threeX(&val)
