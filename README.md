@@ -1,4 +1,4 @@
-# 3X-1-Collatz-Conjecture
+# 3X-plus-1-Collatz-Conjecture
 Run at your own risk.
 
 This software contains no promises,
@@ -34,3 +34,4 @@ for i in 1152921504606948113..<2152921504606847000 {
 
 
 ```
+https://www.collatzresearch.org/chapter1-what-is-the-collatz-conjec
